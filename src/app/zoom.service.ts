@@ -45,7 +45,8 @@ export class ZoomService {
 
   private mousewheelHandler = (ev:MouseEvent) => {
 
-
+    //Notice ev.target is #deskArea
+    // but I need zoom for #desk
     if(ev.ctrlKey){
       let  zoomFactor = 1;
       if( ev['deltaY']>0){
